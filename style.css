@@ -1,0 +1,120 @@
+body{
+    background-color:lightskyblue;
+}
+
+#restoName{
+    font-size: 2em;
+    color: red;
+    text-decoration-style: bold;
+    text-shadow: 25in;
+
+}
+.navContainer{
+    display:flex;
+    padding:15px;
+    justify-content: space-between;
+    color: blueviolet;
+    
+}
+.navTab{
+    margin-top:10px;
+   
+}
+.navTab:hover{
+    margin-top:10px;
+    color:crimson;
+}
+.navBtn{
+    height:40px;
+}
+.picContainer{
+    border:solid purple;
+    border-radius: 10px;
+    border-width:.2px;
+    height:420px;
+    background-image: url('https://bestofnj.com/wp-content/uploads/2021/01/Menu-Sample-Platter.jpg');
+    background-size:cover;
+
+}
+.mainTitle{
+    color: rgb(47, 47, 255);
+    font-stretch: extra-expanded;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 24%;
+    text-align:center;
+}
+.actBtn{
+    font-size:24px;
+    background-color: red;
+    color:white;
+    margin-left:45%;
+    margin-top: 3%;
+    
+}
+.jhr{
+    text-align:center;
+}
+
+.foodContainer{
+    display:flex;
+    justify-content: space-between;
+    
+    
+}
+.foodPic{
+    width:200px;
+    border-radius:100%;
+    border:solid greenyellow;
+    border-width:.3px;
+    margin: 60px;
+}
+
+.link{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: rgb(131, 37, 189);
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown.dropdown.active > .link, 
+
+.link:hover{
+    color:red;
+}
+.dropdown{
+    padding-top: 11px;
+    position: relative;
+}
+
+.dropdown-menu{
+    color: black;
+    top: calc(100% + .25rem)
+    /* background-color: white; */
+    /* border-radius: .25rem; */
+    padding: .75rem;
+    position: absolute;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    
+}
+.dropdown.active  > .link + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+
+}
+.information-grid{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+.dropdown-links{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
